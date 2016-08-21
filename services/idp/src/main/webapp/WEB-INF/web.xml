@@ -87,6 +87,11 @@ under the License.
 		<url-pattern>/saml/clientcert</url-pattern>
 	</servlet-mapping>
 
+	<servlet-mapping>   
+	    <servlet-name>default</servlet-name>
+	    <url-pattern>/admin/*</url-pattern>
+	</servlet-mapping>
+
 	<servlet>
 		<servlet-name>metadata</servlet-name>
 		<servlet-class>org.apache.cxf.fediz.service.idp.MetadataServlet</servlet-class>

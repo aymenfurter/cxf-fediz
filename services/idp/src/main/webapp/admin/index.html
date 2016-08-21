@@ -1,0 +1,103 @@
+<html>
+
+  <head>
+    <base href=".">
+    <title>Fediz IDP Web UI</title>
+
+    <!-- 1. Load libraries -->
+    <!-- Polyfill(s) for older browsers -->
+    <!--<script src="vendor/core-js/client/shim.min.js"></script>-->
+    <script src="vendor/es6-shim/es6-shim.js"></script>
+  
+    <script src="vendor/zone.js/dist/zone.js"></script>
+    <script src="vendor/reflect-metadata/Reflect.js"></script>
+    <script src="vendor/systemjs/dist/system.src.js"></script>
+    <script src="system-config.js"></script>
+
+    <!-- SB Admin 2 -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="sb-admin/sb-admin-2.css" rel="stylesheet">
+  
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- SB Admin 2 -->
+
+
+
+    <!-- 2. Configure SystemJS -->
+
+    <!--
+    <script>
+      System.config({        
+        packages: {        
+          app: {
+            format: 'register',
+            defaultExtension: 'js'
+          }
+        }
+      });
+      System.import('app/main')
+            .then(null, console.error.bind(console));
+    </script>-->
+
+  </head>
+
+  <!-- 3. Display the application -->
+  <body>
+    <div id="wrapper">
+        
+        <init-app></init-app>
+        <!-- /#page-wrapper -->
+
+        
+        <script>          
+            System.import('main').catch(function(err){ console.error(err); });
+        </script>
+
+    </div>
+    <!-- /#wrapper -->
+  </body>
+
+</html>
+
+
+
+<!-- TO BE MERGED !
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>FedizIdpUi</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+  <app-root>Loading...</app-root>
+
+  
+
+    
+
+  
+
+</body>
+</html>
+-->
